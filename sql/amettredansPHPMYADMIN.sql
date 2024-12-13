@@ -8,6 +8,8 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     color VARCHAR(7) DEFAULT '#000000';
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    reset_token VARCHAR(255) DEFAULT NULL;
+    reset_expiry DATETIME DEFAULT NULL;
 );
 
 CREATE TABLE messages (
@@ -18,3 +20,4 @@ CREATE TABLE messages (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
+-- Allez à http://localhost/phpmyadmin/ , créez une nouvelle base de donnée et copiez-coller ce code dans la rubrique SQL.

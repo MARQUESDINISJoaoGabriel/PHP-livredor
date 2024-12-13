@@ -31,7 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $hashedPassword = password_hash($password, PASSWORD_BCRYPT); // On "hash" le mot de passe, simple fonction
 
-            $stmt = $pdo->prepare('INSERT INTO users (username, password, color) VALUES (:username, :password, :color)');:
+            $stmt = $pdo->prepare('INSERT INTO users (username, password, color) VALUES (:username, :password, :color)');
+
             $stmt->execute([
                 'username' => $username,
                 'password' => $hashedPassword,
