@@ -103,3 +103,8 @@ Si vous voulez améliorer ce Guestbook en corrigeant / ajoutant des fonctionalit
 ![Capture d’écran 2025-01-21 à 18 09 28](https://github.com/user-attachments/assets/a3b01c17-d6d2-4aa1-a81d-e6d6f9915112)
 
 ![Capture d’écran 2025-01-21 à 18 08 45](https://github.com/user-attachments/assets/8d71373b-e2cc-4da7-a358-3f320f619cf1)
+
+<hr>
+<hr>
+<br>
+Merci à tout les contributeurs.
