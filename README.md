@@ -4,14 +4,15 @@
 
 <hr> 
 
-## Introduction 
+## Introduction
+
 
 Ce projet de PHP consiste en un Livre d'Or, contenant une fonction login et un logiciel regroupant des messages contenus en une base de données, le Livre d'Or affiche les messages d'utilisateurs différents, a une date donnée. Avec pour unique dépendance XAMPP.<br>
 
 *Compatible sur Linux, Windows, MacOS*
 <hr>
 
-## Sections
+## ![image](https://github.com/user-attachments/assets/25f9d619-849f-438d-ab00-1ab0b590caa7) Sections 
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -33,8 +34,8 @@ Ce projet de PHP consiste en un Livre d'Or, contenant une fonction login et un l
 <strong>Clonez ce repository</strong><br>
 `git clone https://github.com/MARQUESDINISJoaoGabriel/PHP-livredor`
 
-<strong>Accédez au dossier du projet</strong><br>
-`cd PHP-livredor`
+![image](https://github.com/user-attachments/assets/a0d7887e-62c7-41ea-b5cb-ab9b33876464)
+<strong>Déplacez votre projet dans le dossier htdocs des fichiers XAMPPS</strong>
 
 ## Usage
 ### MacOs/Windows/Linux
@@ -63,6 +64,31 @@ Dirigez-vous à <strong>http://localhost/livredor/</strong>, vous serez redirig�
 - Suppression de messages
 - Mot de passe oublié
 
+### Routes accessibles du front-end<br>
+/ - Racine, redirigé à login ou livredor.php s'il détecte que vous êtes connecté<br>
+/login - page où vous vous connecterez.<br>
+/register - page de creation de compte, et de selection de couleur<br>
+/passreset - page de changement de mot de passe.<br>
+**/livredor** - page principale, avec messages, envois, suppressions et autres.<br>
+
+### Structure complète
+```
+LIVREDOR
+├── assets
+│   └── (images...)
+├── inclus
+│   ├── db.php
+│   └── requete_passreset.php
+├── sql
+│   └── amettredansPHPMYADMIN.sql
+├── index.php
+├── livredor.php
+├── login.php
+├── logout.php
+├── passreset.php
+├── README.md
+└── register.php
+```
 ## Contribuer
 
 Si vous voulez améliorer ce Guestbook en corrigeant / ajoutant des fonctionalités : 
